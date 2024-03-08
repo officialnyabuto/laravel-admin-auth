@@ -78,7 +78,11 @@
                                             @endif
                                             </div>
 
+                                            <a href="{{ route('account.forgotPassword')}}">Forgot Password</a>
+
                                         </div>
+
+
 
 
                                         <div class="col-12">
