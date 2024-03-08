@@ -1,9 +1,5 @@
-## Carbon Emission Footprint Tracker
+## Laravel Auth Admin
 
-The Environmental Sustainability Tracker is an innovative platform that enables individuals 
-and communities to track their environmental impact and foster sustainable practices. It 
-integrates carbon footprint calculators, personalized recommendations, and a credit system to 
-raise awareness, provide actionable insights, and incentivize positive environmental change.
 
 ### Installation Instructions - [Local Deployment]
 
@@ -11,8 +7,8 @@ To install, open command prompt and type:
 
 ```bash
 $ cd C://xampp/htdocs/
-$ git clone https://github.com/Peishyy/cftracker.git
-$ cd cftracker
+$ git clone https://github.com/officialnyabuto/laravel-admin-auth.git
+$ cd laravel-admin-auth
 $ composer update
 $ copy .env.example .env
 $ php artisan key:generate
