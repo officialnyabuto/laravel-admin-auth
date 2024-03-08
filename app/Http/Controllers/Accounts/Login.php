@@ -43,7 +43,6 @@ class Login extends Controller
         $validatedData = $request->validate([
             'first_name' => 'required',
             'last_name' => 'required',
-            'country' => 'required',
             'email' => 'required',
             'password' => 'required|min:6',
             'confirm_password' => 'required|same:password'
@@ -53,7 +52,6 @@ class Login extends Controller
         $user->first_name = $validatedData['first_name'];
         $user->last_name = $validatedData['last_name'];
         $user->email = $validatedData['email'];
-        $user->country = $validatedData['country'];
         $user->password = $validatedData['password'];
         // Save the new user
         $user->save();

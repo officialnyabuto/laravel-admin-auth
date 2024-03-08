@@ -17,12 +17,12 @@ class UserSeeder extends Seeder
     public function run(): void
     {
         User::create([
-            'first_name' => 'Patience',
-            'last_name' => 'Mwangi',
+            'first_name' => 'Ronny',
+            'last_name' => 'Nyabuto',
             'mobile' => '07000000000',
-            'username' => 'patience',
-            'email' => 'patiencemwng@gmail.com',
-            'password' => Hash::make('Patience.'),
+            'username' => 'ronny',
+            'email' => 'admin@gmail.com',
+            'password' => Hash::make('Ronny.'),
             'status' => 'activated',
         ]);
 
@@ -30,7 +30,7 @@ class UserSeeder extends Seeder
         $adminRole = Role::where('name', 'Administrator')->first();
 
         // Assign the role to the user
-        $user = User::where('email', 'patiencemwng@gmail.com')->first();
+        $user = User::where('email', 'admin@gmail.com')->first();
         $user->assignRole($adminRole);
 
         $faker = Faker::create();

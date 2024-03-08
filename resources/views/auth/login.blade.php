@@ -71,12 +71,13 @@
                                                     id="inputChoosePassword" name="password" placeholder="Enter Password">
                                                 <a href="javascript:;" class="input-group-text bg-transparent"><i
                                                         class='bx bx-hide'></i></a>
-                                            </div>
-                                            @if ($errors->has('password'))
+                                                        @if ($errors->has('password'))
                                                 <div class="invalid-feedback">
                                                     {{ $errors->first('password') }}
                                                 </div>
                                             @endif
+                                            </div>
+
                                         </div>
 
 

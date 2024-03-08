@@ -32,21 +32,7 @@
             </a>
         </li>
 
-        <li>
-            <a href="{{ route('admin.transportation')}}">
-                <div class="parent-icon"><i class='bx bx-home'></i>
-                </div>
-                <div class="menu-title">Transportation</div>
-            </a>
-        </li>
 
-        <li>
-            <a href="{{ route('admin.energy')}}">
-                <div class="parent-icon"><i class='bx bx-home'></i>
-                </div>
-                <div class="menu-title">Energy</div>
-            </a>
-        </li>
         @elseif (auth()->user()->hasRole('User'))
 
         <li>
@@ -57,21 +43,7 @@
             </a>
         </li>
 
-        <li>
-            <a href="{{ route('user.transportation')}}">
-                <div class="parent-icon"><i class='bx bx-home'></i>
-                </div>
-                <div class="menu-title">Transportation</div>
-            </a>
-        </li>
-
-        <li>
-            <a href="{{ route('user.energy')}}">
-                <div class="parent-icon"><i class='bx bx-home'></i>
-                </div>
-                <div class="menu-title">Energy</div>
-            </a>
-        </li>
+       
 
 
         @endif

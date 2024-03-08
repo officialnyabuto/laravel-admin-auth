@@ -44,20 +44,16 @@
                                                         <th>Name</th>
                                                         <th>Email</th>
                                                         <th>Mobile</th>
-                                                        <th>Country</th>
-                                                        <th>Transportation Emissions</th>
-                                                        <th>Energy Emissions</th>
+
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     @foreach ($users as $user)
                                                     <tr>
-                                                        <td><a href="{{ route('admin.viewUser', $user->id)}}">{{ $user->first_name .' ' . $user->last_name }}</a></td>
+                                                        <td><a href="#">{{ $user->first_name .' ' . $user->last_name }}</a></td>
                                                         <td>{{ $user->email }}</td>
                                                         <td>{{ $user->mobile }}</td>
-                                                        <td>{{ $user->country }}</td>
-                                                        <td>{{ $user->transportation_carbon_emission }}</td>
-                                                        <td>{{ $user->energy_emissions }}</td>
+
                                                     </tr>
                                                     @endforeach
                                                 </tbody>
