@@ -20,4 +20,4 @@ $ php artisan serve
 
 ### License
 
-The cftracker project is open-sourced software licensed under the [Apache license](http://www.apache.org/licenses/).
+The project is open-sourced software licensed under the [Apache license](http://www.apache.org/licenses/).
